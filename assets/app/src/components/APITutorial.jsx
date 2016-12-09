@@ -1,15 +1,15 @@
 import React from 'react';
 import Slider from 'react-slick';
 // import brace from 'brace';
-require('react-ace-wrapper');
+// import AceEditor from 'react-ace';
 
-require('brace/mode/javascript');
-require('brace/theme/github');
+// import 'brace/mode/java';
+// import 'brace/theme/github';
 
 
-function onChange(newValue) {
-  console.log('change',newValue);
-}
+// function onChange(newValue) {
+//   console.log('change',newValue);
+// }
 const APITutorial = React.createClass({
 
   getInitialState() {
@@ -31,13 +31,7 @@ const APITutorial = React.createClass({
           <h3>What is an API</h3>
           <p>{"An API is simply a way for an organization like the US Government to make it's data available via an accessible URL"}</p>
           <p>{"So, the following URL proved the following data:"}</p>
-          <AceEditor
-            mode="javascript"
-            theme="github"
-            onChange={onChange}
-            name="root"
-            editorProps={{$blockScrolling: true}}
-          />
+
         </div>
         <div>
           <h3>2</h3>
