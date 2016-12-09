@@ -1,0 +1,347 @@
+@import './constants.scss';
+@import './_buttons.scss';
+@import './_spacing.scss';
+@import './_animation.scss';
+@import './modal.scss';
+
+body {
+  color: $color-darkgray
+}
+.sent-email{
+  width: 300px;
+  position: absolute;
+  top: 40px;
+  left: -32%;
+  z-index: 5;
+}
+.glyphicon.user-actions {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.text-black {
+    color: black;
+}
+.bkg-ltgrey{
+  background-color: #efefef;
+}
+.bkg-blgrey{
+  background-color: $color-5;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white-text {
+  color: white !important;
+  &:hover{
+    color: lighten($blue, 50) !important;
+  }
+}
+
+.green-text {
+  color: $green;
+}
+
+.bottomright {position:absolute; bottom:0;  margin-bottom:7px; margin:7px; right: 15px; bottom: 10px;}
+.bottomleft {position:absolute; bottom:0;  margin-bottom:7px; left: 180px; bottom: 10px;}
+.bottom {position:absolute; bottom:0;  margin-bottom:7px; left: 40px;}
+
+.ReactModal__Overlay
+{
+  overflow: auto;
+}
+
+.ReactModal__Body--open
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.align-top {
+   vertical-align: top;
+}
+
+.fa-stack {
+  margin-right: 5px;
+}
+
+.fa-stack-text {
+  font-size: 12px;
+}
+
+.small-top-margin {
+  margin-top: 5px;
+}
+
+#calendar {
+  text-align: left;
+}
+
+.small-text {
+  font-size: 0.9em;
+}
+
+.line-break {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button.tag {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #046b99;
+  background-color: white;
+}
+
+div.important-facility {
+  border-color: #cd2026;
+}
+
+.label-text {
+  font-size: 12px;
+  margin-right: 5px;
+  background-color: #112e51;
+}
+
+.label {
+  display: inline-block;;
+}
+
+.black-text {
+  color: black;
+}
+
+/* ============================================================================================================================
+== BUBBLE WITH AN OBTUSE TRIANGLE
+** ============================================================================================================================ */
+
+/* THE SPEECH BUBBLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+.triangle-obtuse {
+  position:relative;
+  padding:15px;
+  margin:1em 0 3em;
+  color:#fff;
+  background:#c81e2b;
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#c81e2b));
+  background:-moz-linear-gradient(#f04349, #c81e2b);
+  background:-o-linear-gradient(#f04349, #c81e2b);
+  background:linear-gradient(#f04349, #c81e2b);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+
+/* Variant : for top positioned triangle
+------------------------------------------ */
+
+.triangle-obtuse.top {
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#c81e2b), to(#f04349));
+  background:-moz-linear-gradient(#c81e2b, #f04349);
+  background:-o-linear-gradient(#c81e2b, #f04349);
+  background:linear-gradient(#c81e2b, #f04349);
+}
+
+/* Variant : for left positioned triangle
+------------------------------------------ */
+
+.triangle-obtuse.left {
+  margin-left:50px;
+  background:#c81e2b;
+}
+
+/* Variant : for right positioned triangle
+------------------------------------------ */
+
+.triangle-obtuse.right {
+  margin-right:50px;
+  background:#c81e2b;
+}
+
+/* THE TRIANGLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+/* creates the wider right-angled triangle */
+.triangle-obtuse:before {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:60px; /* controls horizontal position */
+  border:0;
+  border-right-width:30px; /* vary this value to change the angle of the vertex */
+  border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+  border-style:solid;
+  border-color:transparent #c81e2b;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the narrower right-angled triangle */
+.triangle-obtuse:after {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:80px; /* value = (:before's left) + (:before's border-right/left-width)  - (:after's border-right/left-width) */
+  border:0;
+  border-right-width:10px; /* vary this value to change the angle of the vertex */
+  border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :before */
+  border-style:solid;
+  border-color:transparent #fff;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* Variant : top
+------------------------------------------ */
+
+.triangle-obtuse.top:before {
+  top:-20px; /* value = - border-top-width - border-bottom-width */
+  bottom:auto;
+  left:auto;
+  right:60px; /* controls horizontal position */
+  border:0;
+  border-left-width:30px; /* vary this value to change the width of the triangle */
+  border-top-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+  border-color:transparent #c81e2b;
+}
+
+.triangle-obtuse.top:after {
+  top:-20px; /* value = - border-top-width - border-bottom-width */
+  bottom:auto;
+  left:auto;
+  right:80px; /* value = (:before's right) + (:before's border-right/left-width)  - (:after's border-right/left-width) */
+  border-width:0;
+  border-left-width:10px; /* vary this value to change the width of the triangle */
+  border-top-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :before */
+  border-color:transparent #fff;
+}
+
+/* Variant : left
+------------------------------------------ */
+
+.triangle-obtuse.left:before {
+  top:15px; /* controls vertical position */
+  bottom:auto;
+  left:-50px; /* value = - border-left-width - border-right-width */
+  border:0;
+  border-bottom-width:30px; /* vary this value to change the height of the triangle */
+  border-left-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :after */
+  border-color:#c81e2b transparent;
+}
+
+.triangle-obtuse.left:after {
+  top:35px; /* value = (:before's top) + (:before's border-top/bottom-width)  - (:after's border-top/bottom-width) */
+  bottom:auto;
+  left:-50px; /* value = - border-left-width - border-right-width */
+  border:0;
+  border-bottom-width:10px; /* vary this value to change the height of the triangle */
+  border-left-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :before */
+  border-color:#fff transparent;
+}
+
+/* Variant : right
+------------------------------------------ */
+
+.triangle-obtuse.right:before {
+  top:15px; /* controls vertical position */
+  bottom:auto;
+  left:auto;
+  right:-50px; /* value = - border-left-width - border-right-width */
+  border:0;
+  border-bottom-width:30px; /* vary this value to change the height of the triangle */
+  border-right-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :after */
+  border-color:#c81e2b transparent;
+}
+
+.triangle-obtuse.right:after {
+  top:35px; /* value = (:before's top) + (:before's border-top/bottom-width)  - (:after's border-top/bottom-width) */
+  bottom:auto;
+  right:-50px; /* value = - border-left-width - border-right-width */
+  left:auto;
+  border:0;
+  border-bottom-width:10px; /* vary this value to change the height of the triangle */
+  border-right-width:50px; /* vary this value to change the width of the triangle. must be equal to the corresponding value in :before */
+  border-color:#fff transparent;
+}
+
+
+/**
+ * The geosuggest module
+ */
+.geosuggest {
+  font-size: 18px;
+  font-size: 1rem;
+  position: relative;
+  width: 50%;
+  margin: 1em auto;
+  text-align: left;
+}
+.geosuggest__input {
+  width: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0 0 1px #3d464d;
+  padding: .5em 1em;
+  -webkit-transition: border 0.2s, box-shadow 0.2s;
+          transition: border 0.2s, box-shadow 0.2s;
+}
+.geosuggest__input:focus {
+  border-color: #267dc0;
+  box-shadow: 0 0 0 transparent;
+}
+.geosuggest__suggests {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 25em;
+  padding: 0;
+  margin-top: -1px;
+  background: #fff;
+  border: 2px solid #267dc0;
+  border-top-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style: none;
+  z-index: 5;
+  -webkit-transition: max-height 0.2s, border 0.2s;
+          transition: max-height 0.2s, border 0.2s;
+}
+.geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border-width: 0;
+}
+
+/**
+ * A geosuggest item
+ */
+.geosuggest-item {
+  font-size: 18px;
+  font-size: 1rem;
+  padding: .5em .65em;
+  cursor: pointer;
+  color: #000;
+}
+.geosuggest-item:hover,
+.geosuggest-item:focus {
+  background: #f5f5f5;
+}
+.geosuggest-item--active {
+  background: #267dc0;
+  color: #fff;
+}
+.geosuggest-item--active:hover,
+.geosuggest-item--active:focus {
+  background: #ccc;
+}

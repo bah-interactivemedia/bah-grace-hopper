@@ -1,0 +1,44 @@
+
+
+div.carousel {
+  margin-bottom: 30px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+
+  div.rec-card {
+    position: relative;
+    padding: 0 10px 0 10px;
+
+    div.rec-body {
+      height: 250px;
+      background-size: cover;
+
+      div.rec-words {
+        position: relative;
+        top: 140px;
+        padding:10px;
+        background-color: rgba(0,0,0,0.4);
+
+        a {
+          color: white;
+        }
+        
+        span.label-text {
+          display: inline-block;;
+          font-size: 10px;
+          margin-right: 5px;
+          margin-right: 5px;
+          border: 1px solid white;
+          border-radius: 3px;
+          padding: 3px;
+          background-color: rgba(10,10,10,0.3);
+        }
+      }
+    }
+  }
+}
+
+.slick-slider {
+  margin-bottom: 0;
+}
+

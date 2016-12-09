@@ -1,0 +1,92 @@
+@import './constants.scss';
+
+div.searchBarWrapper {
+  background-color: $color-3;
+  padding-top: 50px;
+}
+
+div.tags {
+  margin: 10px 25px 0px 25px;
+  background-color: $color-lightgray;
+  bottom-border: 2px solid $color-lightgray;
+
+  button.tags {
+    border-color: $color-4;
+  }
+}
+
+div.paginationWrapper {
+  border-bottom: 2px solid $color-showmore;
+
+  div.pagination {
+    margin: 10px 30px 0px 25px;
+    padding: 10px 0 10px 0;
+
+    a.gray {
+      color: $color-darkgray
+    }
+  }
+}
+
+
+div.resultsCard {
+  min-height: 100px;
+  margin: 0px;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid $color-showmore;
+  &:hover{
+    background-color: #efefef;
+  }
+  a { color: darken($blue, 10); }
+  h3, h4, h5 {
+    margin: 0;
+    color: darken($grey, 20);
+  }
+
+  h5 {
+    margin-top: 5px;
+  }
+
+  span.orange {
+    color: $color-yellowicon;
+  }
+
+  div.activities {
+    margin-top: 10px;
+
+    button {
+      margin: 0 5px 5px 0;
+      border: 1px solid $color-showmore;
+    }
+
+    button.matched {
+      background-color: lighten($color-othergray, 20%);
+    }
+  }
+
+  div.reserved-count {
+    position: absolute;
+    top: 28px;
+    right: 15px;
+
+    span {
+      color: $color-4;
+    }
+  }
+
+  span.popular {
+    color: $color-othergray
+  }
+}
+
+div.mapContainer {
+  width: 90%;
+
+  div.mapInnerContainer {
+    height: 400px;
+    margin-top: 25px;
+  }
+}
+
+

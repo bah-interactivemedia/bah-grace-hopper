@@ -1,0 +1,52 @@
+@import './constants.scss';
+
+h2.organization {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h4.gps {
+  margin-bottom: 30px;
+}
+
+div.rec-card {
+
+  a.item-to-item {
+    h4 {
+      color: $color-darkgray;
+    }
+    h5 {
+      color: $color-gray;
+    }
+  }
+}
+
+div.activities {
+  button {
+    margin: 0 5px 5px 0;
+    border: 1px solid $color-othergray;
+  }
+
+  button.matched {
+    background-color: $color-showmore;
+  }
+}
+
+div.lightGray {
+  background-color: $color-lightgray;
+}
+
+div.col-sm-12 {
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  
+  div.row {
+    div.carousel {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
