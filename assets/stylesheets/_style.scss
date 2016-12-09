@@ -5,6 +5,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
+// INTERIOR PAGE
+.interior {
+
+}
+
 //ROTATOR
 .rotator {
 	&.usa-hero {
@@ -13,13 +18,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.usa-hero-callout.usa-width-full {
 		max-width: 100%;
-		background-color: rgba($color-primary, .5);
+		background-color: rgba($color-gray-dark, .5);
 	}
-
 	
 	.usa-search.usa-search-big [type="search"], .usa-search.usa-search-big .usa-search-input {
 		max-width: 100%;
 		@media screen and (min-width: 481px){}
+	}
+
+	.interior &.usa-hero {
+		background-image: none;
+		background-color: $color-green;
 	}	
 }
 
