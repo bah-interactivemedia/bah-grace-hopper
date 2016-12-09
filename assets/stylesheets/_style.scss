@@ -219,3 +219,21 @@ nav {
 		padding-right: 0;
 	}
 }
+
+.search .usa-hero-callout h3 {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.search .usa-hero-callout ul.usa-unstyled-list li {
+	display: inline-block;
+	padding: 0 10px;
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+.search .usa-hero-callout ul.usa-unstyled-list {
+	margin-top: 20px;
+}
