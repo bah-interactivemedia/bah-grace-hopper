@@ -1,7 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-<<<<<<< HEAD
-import VisExample from '../components/VisualizationExample/VisExample';
 
 import APITutorial from '../components/APITutorial';
 
@@ -13,7 +11,6 @@ const App = React.createClass({
   render() {
     return (
       <div>
-        <VisExample />
         <APITutorial/>
       </div>
     );
