@@ -1,0 +1,22 @@
+[class*="-control"]{
+  color: white;
+}
+[class*="-menu"]{
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: thin solid #efefef;
+  left: 0px;
+  top:50px;
+  color: black;
+  z-index: 2;
+}
+.is-open{
+  position: relative;
+}
+.frequency-control, .time-control{
+  color: black;
+}
+.frequency-menu, .time-menu{
+  top:100%;
+}

@@ -2,7 +2,7 @@
         <button class="usa-menu-btn">Menu</button>
         <div class="usa-logo" id="logo">
           <em class="usa-logo-text">
-            <a href="#" accesskey="1" title="Home" aria-label="Home">GSA.gov</a>
+            <a href="/" accesskey="1" title="Home" aria-label="Home">GSA.gov</a>
           </em>
         </div>
       </div>
@@ -12,24 +12,24 @@
             <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
           </button>
           <div class="usa-nav-secondary">
-            <form class="usa-search usa-search-small js-search-form">
-              <div role="search">
-                <label class="usa-sr-only" for="search-field-small">Search small</label>
-                <input id="search-field-small" type="search" name="search">
-                <button type="submit">
-                  <span class="usa-sr-only">Search</span>
-                </button>
-              </div>
-            </form>
             <ul class="usa-unstyled-list usa-nav-secondary-links">
-              <li class="js-search-button-container">
+              <li>
+                <a href="#">Learn</a>
+              </li>
+              <li class="js-search-button-container">  
+                <form class="usa-search usa-search-small js-search-form fadein">
+                  <div role="search">
+                    <label class="usa-sr-only" for="search-field-small">Search small</label>
+                    <input id="search-field-small" type="search" name="search">
+                    <button type="submit">
+                      <span class="usa-sr-only">Search</span>
+                    </button>
+                  </div>
+                </form>
                 <button class="usa-header-search-button js-search-button">Search</button>
               </li>
               <li>
-                <a href="#">Secondary priority link</a>
-              </li>
-              <li>
-                <a href="#">Easy to comprehend</a>
+                <a href="#">Participate</a>
               </li>
             </ul>
           </div>

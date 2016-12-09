@@ -1,0 +1,24 @@
+@import './constants.scss';
+
+nav.navbar {
+  background-color: $blue;
+  color: $color-1;
+  border-radius: 0px;
+  .navbar-brand {
+    height: 60px;
+    padding: 5px 15px;
+  }
+}
+
+ul.nav {
+
+  li {
+    margin-left: 25px;
+    margin-right: 25px;
+
+    a {
+      color: $color-1;
+    }
+
+  }
+}

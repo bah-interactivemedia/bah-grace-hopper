@@ -1,0 +1,10 @@
+@import './constants.scss';
+
+div.info {
+  h5 {
+    color: $color-darkgray;
+  }
+  h6 {
+    color: $color-gray;
+  }
+}
