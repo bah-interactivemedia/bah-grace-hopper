@@ -128,3 +128,20 @@ nav {
 		border-right: none;
 	}
 }
+
+@media screen and (min-width: 951px) {
+	.usa-nav-secondary-links li:not(:last-child)::after {
+		content: none;
+	}
+}
+
+@media screen and (min-width: 951px) {
+	.usa-header {
+		border-bottom: none;
+	}
+}
+
+.home main .usa-section-dark {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
