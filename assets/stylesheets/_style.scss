@@ -207,3 +207,15 @@ nav {
 .search .usa-hero-callout ul.usa-unstyled-list {
 	float: right;
 }
+
+.usa-hero h2 {
+	max-width: 900px;
+    margin: 30px auto 20px;
+}
+
+@media screen and (min-width: 600px) {
+	.usa-hero-callout .usa-grid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
