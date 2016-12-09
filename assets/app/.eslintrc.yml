@@ -134,7 +134,7 @@ rules:
   eol-last: 0
   func-names: 0
   func-style: [2, 'declaration']
-  indent: [2, 2]
+  indent: [0, 2]
   lines-around-comment: 0
   linebreak-style: [2, 'unix']
   key-spacing: [2, {beforeColon: false, afterColon: true}]
@@ -157,12 +157,12 @@ rules:
   one-var: 0
   padded-blocks: [2, 'never']
   quote-props: 0
-  quotes: [2, 'single', 'avoid-escape']
+  quotes: [0, 'single', 'avoid-escape']
   semi-spacing: [2, {before: false, after: true}]
   semi: [2, 'always']
   sort-vars: 0
   keyword-spacing: 2
-  space-before-blocks: [2, 'always']
+  space-before-blocks: [0, 'always']
   space-before-function-paren: [2, 'never']
   object-curly-spacing: [0, 'always']
   space-in-parens: [2, 'never']
