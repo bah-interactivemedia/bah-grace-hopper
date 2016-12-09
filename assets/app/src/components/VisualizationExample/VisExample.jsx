@@ -15,11 +15,16 @@ export default class VisExample extends React.Component {
     }
 
     setData(data) {
+        console.log(data);
         Papa.parse(data, {
+            header: true,
+            encoding: "",
+            delimeter: "",
         	complete: function(results) {
-                this.setState({
-                    chartData: results.data
-                });
+                // this.setState({
+                //     chartData: results.data
+                // });
+                console.log(results);
         	}
         });
     }
@@ -27,7 +32,7 @@ export default class VisExample extends React.Component {
     render() {
         return (
             <div>
-                <FileUploads {...this.props} setData={this.setData} />
+                <FileUploads setData={this.setData} />
                 <Visualization dataSet={this.state.chartData} />
             </div>
         );

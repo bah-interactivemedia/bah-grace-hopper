@@ -40,7 +40,7 @@ export default class FileUploads extends React.Component {
         }
       return (
           <div>
-            <Dropzone onDrop={this.onDrop}>
+            <Dropzone onDrop={this.props.setData}>
               <div>Select a CSV file to upload, or drop it right here!</div>
             </Dropzone>
             { error }
