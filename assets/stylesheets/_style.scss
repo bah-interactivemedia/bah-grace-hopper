@@ -1,0 +1,11 @@
+//ROTATOR
+.rotator {
+	&.usa-hero {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	.usa-hero-callout.usa-width-full {
+		max-width: 100%;
+		background-color: rgba($color-primary, .5);
+	}
+}
