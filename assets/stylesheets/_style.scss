@@ -145,3 +145,18 @@ nav {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
+@media screen and (min-width: 951px) {
+
+	.usa-nav-secondary-links li {
+		padding-right: 1rem;
+	}
+}
+
+.usa-footer-secondary_section {
+	background-color: #122E51;
+
+	h1, h2, h3, h4, h5, h6, p {
+		color: #fff;
+	}
+}
