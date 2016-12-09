@@ -55,7 +55,7 @@ a {
 	 		}
 
 	 	}
-	 	ul.results-list {
+	 	ul.results-list, ul.ul-search-results {
 	 		padding-left: 0;
 		    list-style-type: none;
 		    &, li {
@@ -212,6 +212,7 @@ nav {
 }
 
 .usa-footer-secondary_section {
+	padding-bottom: 12rem;
 	background-color: #122E51;
 
 	h1, h2, h3, h4, h5, h6, p {
