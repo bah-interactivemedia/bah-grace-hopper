@@ -8,4 +8,18 @@
 		max-width: 100%;
 		background-color: rgba($color-primary, .5);
 	}
+
+	
+	.usa-search.usa-search-big [type="search"], .usa-search.usa-search-big .usa-search-input {
+		max-width: 100%;
+		@media screen and (min-width: 481px){}
+	}	
+}
+
+//MIXINS
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
 }
