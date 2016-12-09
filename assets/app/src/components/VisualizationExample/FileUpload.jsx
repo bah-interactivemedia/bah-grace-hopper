@@ -14,28 +14,27 @@ export default class FileUpload extends React.Component {
         this.state = {
             message: ""
         };
-
-        // bind function
-        this.setData = this.setData.bind(this);
     }
 
-    onDrop(acceptedFiles, rejectedFiles) {
-      if (!rejectedFiles) {
+    onDrop(acceptedFiles) {
+      if (acceptedFiles !== null){
+          console.log(this.props);
           this.props.setData(acceptedFiles);
       }
       else {
-          this.setState = {
+          this.setState({
               message:  'You have selected an invalid file.  Please try another!'
-          }
+          });
       }
     }
 
     render() {
+        let error = null;
         if (this.state.message !== "") {
-            const error = <Error errorMessage={this.state.message} />;
+            error = <Error errorMessage={this.state.message} />;
         }
         else {
-            const error = null;
+            error = null;
         }
       return (
           <div>

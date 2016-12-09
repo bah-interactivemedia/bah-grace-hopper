@@ -1,7 +1,7 @@
-import { React, PropTypes } from 'react';
+import React from 'react';
 
 const propTypes = {
-    errorMessage: PropTypes.string
+    errorMessage: React.PropTypes.string
 };
 
 const defaultProps = {

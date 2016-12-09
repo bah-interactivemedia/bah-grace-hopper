@@ -1,6 +1,7 @@
 import React from 'react';
 import FileUpload from './FileUpload';
 import Visualization from './Visualization';
+import Papa from 'papaparse';
 
 export default class VisExample extends React.Component {
 
@@ -11,13 +12,15 @@ export default class VisExample extends React.Component {
             chartData: []
         };
 
-        // bind function
-        this.setData = this.setData.bind(this);
     }
 
     setData(data) {
-        this.setState({
-            chartData: data
+        Papa.parse(data, {
+        	complete: function(results) {
+                this.setState({
+                    chartData: results.data
+                });
+        	}
         });
     }
 
