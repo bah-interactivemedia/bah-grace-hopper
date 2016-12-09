@@ -183,3 +183,17 @@ nav {
     float: left;
     padding: 0 10px;
 }
+
+.usa-hero {
+	text-align: center;
+	color: #fff;
+}
+
+.usa-hero-callout > *:first-child {
+	margin-bottom: 0;
+}
+
+.usa-hero-callout .usa-hero-callout {
+	padding-right: 0;
+	padding-left: 3rem;
+}
