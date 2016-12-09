@@ -1,7 +1,35 @@
 <section class="usa-hero rotator">
 	<div class="usa-grid">
-	  <div class="usa-hero-callout usa-width-full usa-section-dark text-center">
-	    <h2><span class="usa-hero-callout-alt">Quickly Search and Pull Data, API, and Code</span> Published by GSA in a Centralized Location</h2>
+	  <div class="usa-hero-callout usa-width-full usa-section-dark">
+	  <div class="usa-grid">
+		    <div class="usa-width-one-third">
+			    <h3><span class="usa-hero-callout-alt">Search</span></h3>
+		    </div>
+		    <div class="usa-width-two-thirds">
+				  <fieldset class="usa-fieldset-inputs usa-sans">
+
+				    <legend class="usa-sr-only">Historical figures 1</legend>
+
+				    <ul class="usa-unstyled-list">
+				      <li>
+				        <input id="data_val" type="checkbox" name="search-1" value="data">
+				        <label for="data">Data</label>
+				      </li>
+				      <li>
+				        <input id="api_val" type="checkbox" name="search-1" value="APIs">
+				        <label for="APIs">APIs</label>
+				      </li>
+				      <li>
+				        <input id="code_val" type="checkbox" name="search-1" value="code">
+				        <label for="code">Code</label>
+				      </li>
+				    </ul>
+
+				  </fieldset>
+
+
+		    </div>
+	    </div>
 	      {% include _search_rotator.html %}
 	  </div>
 	</div>

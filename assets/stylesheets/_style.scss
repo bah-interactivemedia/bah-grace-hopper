@@ -49,6 +49,14 @@ h1, h2, h3, h4, h5, h6 {
 	.interior &.usa-hero {
 		background-image: none;
 		background-color: $color-green;
+		.usa-hero-callout {
+			padding-bottom: 0;
+			padding-top: 0;
+			h3 {
+				margin-top: 0;
+				margin-bottom: 0; 
+			}
+		}
 	}	
 }
 
@@ -144,4 +152,54 @@ nav {
 .home main .usa-section-dark {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+@media screen and (min-width: 951px) {
+
+	.usa-nav-secondary-links li {
+		padding-right: 1rem;
+	}
+}
+
+.usa-footer-secondary_section {
+	background-color: #122E51;
+
+	h1, h2, h3, h4, h5, h6, p {
+		color: #fff;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+.interior .usa-hero-callout h3 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.interior ul.usa-unstyled-list {
+	display: inline-block;
+    float: left;
+    padding: 0 10px;
+}
+
+.usa-hero {
+	text-align: center;
+	color: #fff;
+}
+
+.usa-hero-callout > *:first-child {
+	margin-bottom: 0;
+}
+
+.usa-hero-callout .usa-hero-callout {
+	padding-right: 0;
+	padding-left: 3rem;
+}
+
+.search .usa-hero ul.usa-unstyled-list {
+	display: inline-block;
+    float: left;
+    padding: 0 10px;
 }
