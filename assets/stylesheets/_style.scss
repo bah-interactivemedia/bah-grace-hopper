@@ -16,6 +16,16 @@
 	}	
 }
 
+//NAVBAR
+nav {
+	.usa-nav-secondary .usa-search.is-visible {
+	    display: inline-block;
+	    float: none;
+	    top: -5px;
+	}
+
+}
+
 //MIXINS
 .text-center {
   text-align: center !important;
