@@ -89,7 +89,8 @@ nav {
 }
 
 .rotator .usa-hero-callout.usa-width-full {
-	background-color: #2E8540;
+	background-color: rgba(46, 133, 64, 0.5);
+	border-radius: 3px;
 }
 
 .usa-section-dark h1, .usa-section-dark h2, .usa-section-dark h3, .usa-section-dark h4, .usa-section-dark h5, .usa-section-dark h6 {
@@ -99,4 +100,31 @@ nav {
 
 .usa-hero-callout-alt {
 	display: initial;
+}
+
+.rotator .usa-search.usa-search-big [type="search"], .rotator .usa-search.usa-search-big .usa-search-input {
+	border-color: #ccc;
+	border-radius: 3px 0 0 3px;
+}
+
+.usa-hero-callout .usa-button-primary {
+	border-radius: 0 3px 3px 0;
+	background-color: #205493;
+	font-weight: 500;
+}
+
+.usa-nav-secondary-links a, .usa-nav-secondary-links .usa-header-search-button {
+	font-size: 20px;
+}
+
+.usa-nav-secondary-links li:not(:last-child)::after {
+	content: none;
+}
+
+.usa-nav-secondary li {
+	border-right: 1px solid #ccc;
+
+	&:last-child {
+		border-right: none;
+	}
 }
