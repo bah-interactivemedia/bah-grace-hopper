@@ -1,0 +1,31 @@
+.btn{
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.btn-DEXI{
+  background-color: darken($blue, 7);
+  height: 61px;
+  margin-top: -1px;
+
+}
+.btn.btn-link:hover{
+  text-decoration: none;
+}
+.button-icon {
+	padding: 0 em(12);
+
+	i {
+		font-size: em(24);
+	}
+}
+
+.button-sm {
+	padding: em(5.25) em(10.25);
+	width: auto;
+	height: em(38);
+}
+
+.button-full {
+	width: 100%;
+}

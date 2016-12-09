@@ -1,0 +1,105 @@
+@import './constants.scss';
+.thead{
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 5px 0px;
+  div[class*="-menu"] {
+    font-weight: normal;
+    position: absolute;
+    background-color: white;
+    border: thin solid $color-3;
+    z-index: 2;
+    padding: 10px;
+    width: auto;
+  }
+}
+
+div.topBar {
+  padding: 10px 10px;
+  .scheduleToggle{
+    background-color: white;
+    border: thin solid #ccc;
+    width: 220px;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    input, button{
+      width:100%
+    }
+    label{
+      margin-top: 10px;
+    }
+  }
+}
+.search-container{
+  input{
+    width: 100%;
+    border: 3px solid darken($grey, 10);
+  }
+  margin-bottom: 10px;
+}
+.react-autosuggest__container {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  input{
+    border-radius: 0px;
+  }
+}
+
+.react-autosuggest__input {
+  width: 240px;
+  height: 30px;
+  padding: 10px 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #aaa;
+}
+
+.react-autosuggest__input:focus {
+  outline: none;
+}
+
+.react-autosuggest__container--open .react-autosuggest__input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--focused {
+  background-color: #ddd;
+}
+
+.hidden-submit {
+    border: 0 none;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.suggest.btn:focus {
+  outline: none;
+}
