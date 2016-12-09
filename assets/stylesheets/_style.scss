@@ -167,4 +167,19 @@ nav {
 	h1, h2, h3, h4, h5, h6, p {
 		color: #fff;
 	}
+
+	a {
+		color: #fff;
+	}
+}
+
+.interior .usa-hero-callout h3 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.interior ul.usa-unstyled-list {
+	display: inline-block;
+    float: left;
+    padding: 0 10px;
 }
