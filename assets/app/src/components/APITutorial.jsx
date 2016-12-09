@@ -1,15 +1,5 @@
 import React from 'react';
 import Slider from 'react-slick';
-// import brace from 'brace';
-// import AceEditor from 'react-ace';
-
-// import 'brace/mode/java';
-// import 'brace/theme/github';
-
-
-// function onChange(newValue) {
-//   console.log('change',newValue);
-// }
 const APITutorial = React.createClass({
 
   getInitialState() {
@@ -27,20 +17,29 @@ const APITutorial = React.createClass({
     };
     return (
       <Slider {...settings}>
-        <div>
+        <div className="">
           <h3>What is an API</h3>
           <p>{"An API is simply a way for an organization like the US Government to make it's data available via an accessible URL"}</p>
           <p>{"So, the following URL proved the following data:"}</p>
+          <pre>
+            {'https://api.usa.gov/jobs/search.json?'}
+          </pre>
+          <div></div>
 
         </div>
         <div>
-          <h3>2</h3>
+          <h3>{"How do I start?"}</h3>
+          <p>{"Start by signing up for an API Key. The API Key is added to the HTTP request so we know who you are."}</p>
+          <div className="">
+            <button>{'Sign up for an API'}</button>
+          </div>
         </div>
         <div>
-          <h3>3</h3>
+          <h3>{"How do I make my first call?"}</h3>
+          <p>{'You will need to make a call. Here we are using a jQuery AJAX call. You can learn about AJAX calls <a>here</a>'}</p>
         </div>
         <div>
-          <h3>4</h3>
+          <h3>{"How do I add the content to my page"}</h3>
         </div>
         <div>
           <h3>5</h3>

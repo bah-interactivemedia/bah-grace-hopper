@@ -7,6 +7,16 @@
 body {
   color: $color-darkgray
 }
+
+.slick-initialized.slick-slider {
+    width: 800px;
+    height: 300px;
+    border: thin solid #ccc;
+    padding: 20px;
+}
+.tut-slider{
+  width: 800px;
+}
 .sent-email{
   width: 300px;
   position: absolute;
