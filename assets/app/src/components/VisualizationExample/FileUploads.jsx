@@ -6,7 +6,7 @@ const propTypes = {
     setData: React.PropTypes.func
 };
 
-export default class FileUpload extends React.Component {
+export default class FileUploads extends React.Component {
 
     constructor(props) {
         super(props);
@@ -14,12 +14,14 @@ export default class FileUpload extends React.Component {
         this.state = {
             message: ""
         };
+
+        this.setData = this.props.setData.bind(this);
     }
 
     onDrop(acceptedFiles) {
       if (acceptedFiles !== null){
           console.log(this.props);
-          this.props.setData(acceptedFiles);
+          this.setData(acceptedFiles);
       }
       else {
           this.setState({
@@ -46,4 +48,4 @@ export default class FileUpload extends React.Component {
       );
     }
 }
-FileUpload.propTypes = propTypes;
+FileUploads.propTypes = propTypes;

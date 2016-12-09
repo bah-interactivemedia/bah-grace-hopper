@@ -1,5 +1,5 @@
 import React from 'react';
-import FileUpload from './FileUpload';
+import FileUploads from './FileUploads';
 import Visualization from './Visualization';
 import Papa from 'papaparse';
 
@@ -27,7 +27,7 @@ export default class VisExample extends React.Component {
     render() {
         return (
             <div>
-                <FileUpload setData={this.setData} />
+                <FileUploads {...this.props} setData={this.setData} />
                 <Visualization dataSet={this.state.chartData} />
             </div>
         );
