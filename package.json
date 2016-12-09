@@ -4,11 +4,10 @@
   "description": "This is a boilerplate for using the [U.S. Web Design Standards](https://standards.usa.gov/) to build static websites and prototypes with [Jekyll](https://jekyllrb.com/).",
   "main": "index.js",
   "dependencies": {
-    "d3": "^3.5.17",
-    "rd3": "^0.7.4",
+    "fuzzy": "^0.1.3",
+    "node-wit": "^4.2.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "react-dropzone": "^3.7.3",
     "uswds": "^0.13.1"
   },
   "devDependencies": {},
