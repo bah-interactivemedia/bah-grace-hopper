@@ -4,7 +4,7 @@
     <head>
       {% include _head.html %}
     </head>
-    <body class="interior">
+    <body class="interior search">
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
     <header class="usa-header usa-header-extended" role="banner">
       {% include _topbanner.html %}
@@ -12,6 +12,7 @@
     </header>
     <div class="usa-overlay"></div>
     <main id="main-content">
+    {% include _interior_rotator.html %}
       <div class="usa-grid usa-section">
       {{ content }}
       </div>
